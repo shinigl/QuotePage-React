@@ -1,0 +1,67 @@
+/* Quotes.module.css */
+
+/* Container for the entire quotes list */
+.quoteContainer {
+    display: flex;
+    flex-direction: column; /* Arrange quotes in a column */
+    align-items: center; /* Center the quotes horizontally */
+    gap: 2rem; /* Gap between each quote */
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Individual quote item (each div with fixed width of 1200px) */
+  .quoteItem {
+    width: 1200px; /* Fixed width of 1200px for each quote box */
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fff; /* White background */
+    border: 1px solid #e1e1e1; /* Light border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover transition */
+  }
+  
+  /* Hover effects on each quote item */
+  .quoteItem:hover {
+    transform: translateY(-5px); /* Lift the quote slightly */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+  }
+  
+  /* Styling for the blockquote text */
+  .quoteText {
+    font-style: italic;
+    font-size: 1.25rem; /* Slightly larger font size */
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1rem; /* Space between quote and author */
+    border-left: 4px solid #ff8c00; /* Stylish left border */
+    padding-left: 16px; /* Space between the border and the text */
+  }
+  
+  /* Styling for the author's name */
+  .author {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: right;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .quoteContainer {
+      flex-direction: column; /* Keep the column layout */
+      align-items: center; /* Center items */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .quoteContainer {
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    .quoteItem {
+      width: 100%; /* Full width for smaller screens */
+      padding: 1rem;
+    }
+  }
+  
